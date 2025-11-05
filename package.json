@@ -1,0 +1,15 @@
+{
+  "name": "str.c",
+  "version": "1.0.1",
+  "description": "str: yet another string library for C language; Maxim (2020).",
+  "keywords": ["c", "library", "string", "str"],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/str.c.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/str.c/issues"
+  },
+  "homepage": "https://github.com/nodef/str.c#readme"
+}

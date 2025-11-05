@@ -1,0 +1,4 @@
+tools/
+.editorconfig
+snippets.md
+str_test.c

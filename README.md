@@ -14,10 +14,29 @@ with existing libraries, so decided to make the right one, once and forever. ðŸ™
 * Support for copy and move semantics, although not enforceable by the C language;
 * String composition functions writing to memory, file descriptors, or file streams;
 * Can be compiled using `gcc` or `clang`, and linked with `libc` or `musl`.
+* By [Maxim](https://github.com/maxim2266)
 
 ## Installation
-Just clone the project and copy (or symlink) the files `str.h` and `str.c` into your project,
-but please respect the [license](LICENSE).
+
+Run:
+```bash
+$ npm i str.c
+```
+
+And then include `str.h` as follows:
+```c
+#include "node_modules/str.c/str.h"
+```
+
+You may also want to include `str.c` as follows:
+```c
+#ifndef __STR_C__
+#define __STR_C__
+#include "node_modules/str.c/str.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 ## Code Examples
 
@@ -438,3 +457,10 @@ The library requires at least a C11 compiler. So far has been tested on Linux Mi
 from 19.3 to 22.0, with `gcc` versions from 9.5.0 to 13.2.0 (with either `libc` or `musl`),
 and `clang` versions up to 18.1.3; it is also reported to work on ALT Linux 9.1 for Elbrus, with
 `lcc` version 1.25.09.
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/str.c)
